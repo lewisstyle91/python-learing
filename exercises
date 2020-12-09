@@ -1,0 +1,12 @@
+#interest first exercise in functions that had me perplexed at first as i was trying to return just the list, until i found the str.join answer
+
+def myfunc (string):
+    list = []
+    index = 0
+    for char in string:
+        if index %2 == 0:
+            list.append(char.upper())
+        else:
+            list.append(char.lower())
+        index=index+1
+    return ''.join(list)
